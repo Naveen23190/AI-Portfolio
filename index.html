@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>M S Naveen Kumar | Full Stack Developer</title>
+		<title>Naveen Kumar | Full Stack Developer</title>
 		<meta
 			name="description"
-			content="Animated and visually appealing personal portfolio"
+			content="Naveen Kumar is a full-stack developer in Bengaluru building responsive web experiences and reliable Java applications."
 		/>
+		<meta name="theme-color" content="#0b1220" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -21,11 +22,20 @@
 		<div class="bg-shape shape2"></div>
 		<header class="navbar">
 			<div class="container nav-inner">
-				<a href="#" class="brand">M S NAVEEN KUMAR</a>
-				<button class="menu-toggle" aria-label="Toggle menu">
+				<a href="#home" class="brand">NAVEEN KUMAR<span>.</span></a>
+				<button
+					class="menu-toggle"
+					aria-label="Open navigation"
+					aria-expanded="false"
+					aria-controls="primary-navigation"
+				>
 					<span></span> <span></span> <span></span>
 				</button>
-				<nav class="nav-links">
+				<nav
+					class="nav-links"
+					id="primary-navigation"
+					aria-label="Main navigation"
+				>
 					<a href="#about">About</a>
 					<a href="#skills">Skills</a>
 					<a href="#tools">Tools</a>
@@ -35,65 +45,72 @@
 			</div>
 		</header>
 		<main class="container">
-			<section class="hero">
+			<section class="hero" id="home">
 				<div class="hero-content reveal">
-					<p class="eyebrow">Frontend • Backend • Database</p>
+					<p class="eyebrow">
+						Full-stack developer <span>·</span> Bengaluru, India
+					</p>
 					<h1>
-						Hi, I’m <span>Naveen Kumar</span><br />
-						<span class="typed"></span>
+						Building useful<br />
+						<span>digital experiences.</span>
 					</h1>
 					<p>
-						I build modern, responsive, scalable web applications using HTML,
-						CSS, JavaScript, React JS, Java, JDBC & Servlets, Spring Boot,
-						Hibernate, MySQL, and Oracle Database.
+						I’m Naveen, a full-stack developer who turns ideas into clear,
+						responsive interfaces and dependable applications.
 					</p>
 					<div class="btn-row">
-						<a href="#projects" class="btn btn-primary">View Projects</a>
-						<a href="#contact" class="btn btn-secondary">Hire Me</a>
+						<a href="#projects" class="btn btn-primary">
+							Explore my work <span aria-hidden="true">↗</span>
+						</a>
+						<a href="#contact" class="btn btn-secondary">Let’s talk</a>
 					</div>
-					<div class="stats">
-						<div class="stat-card">
-							<strong>10+</strong> <span>Projects</span>
-						</div>
-						<div class="stat-card">
-							<strong>12+</strong> <span>Technologies</span>
-						</div>
+					<div class="hero-specialties" aria-label="Areas of focus">
+						<span>Frontend</span>
+						<span>Backend</span>
+						<span>Databases</span>
 					</div>
 				</div>
 				<div class="hero-card reveal">
 					<img
 						class="avatar"
-						src="WhatsApp Image 2026-07-02 at 8.30.17 PM.jpeg"
+						src="WhatsApp Image 2026-10-23 at 8.17.13 PM.jpeg"
 						alt="Naveen Kumar"
 					/>
-					<h3>Full Stack Developer</h3>
-					<p>
-						Crafting powerful apps with clean UI and strong backend
-						architecture.
-					</p>
+					<div class="profile-copy">
+						<p class="profile-label">A little about me</p>
+						<h2>Naveen Kumar</h2>
+						<p>Full Stack Developer</p>
+						<div class="profile-status">
+							<span aria-hidden="true"></span> Open to opportunities
+						</div>
+					</div>
 				</div>
 			</section>
 			<section id="about" class="section reveal">
-				<h2 class="section-title">About Me</h2>
-				<div class="grid-2">
-					<div class="card">
-						<p>
-							I’m a passionate Full Stack Developer with expertise in building
-							modern interfaces and robust backend systems. I enjoy delivering
-							high-performance applications that look great and work smoothly.
-						</p>
-					</div>
-					<div class="card">
-						<p>
-							My work spans frontend technologies like HTML, CSS, JavaScript,
-							and responsive UI design, along with backend development using
-							Java, Advanced Java, Spring, Spring Boot, and Hibernate.
-						</p>
-					</div>
+				<div class="section-heading">
+					<p class="section-kicker">A bit about me</p>
+					<h2 class="section-title">
+						Thoughtful code. <span>Useful outcomes.</span>
+					</h2>
+				</div>
+				<div class="card about-card">
+					<p>
+						I enjoy working across the stack—from shaping an intuitive user
+						interface to building the APIs and data layer behind it. My focus is
+						on practical, maintainable software that feels just as good to use
+						as it is to build.
+					</p>
+					<p>
+						I work with modern frontend technologies and the Java ecosystem,
+						including Spring Boot, Hibernate, and relational databases.
+					</p>
 				</div>
 			</section>
 			<section id="skills" class="section reveal">
-				<h2 class="section-title">Tech Stack</h2>
+				<div class="section-heading">
+					<p class="section-kicker">What I work with</p>
+					<h2 class="section-title">Skills &amp; technologies</h2>
+				</div>
 				<div class="grid-2">
 					<div class="card skill-card">
 						<h3>Frontend</h3>
@@ -116,13 +133,15 @@
 							<span class="pill">Hibernate</span>
 							<span class="pill">MySQL</span>
 							<span class="pill">Oracle DB</span>
-							<span class="pill">JDBC & Servlets</span>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="tools" class="section reveal">
-				<h2 class="section-title">Tools I Know</h2>
+				<div class="section-heading">
+					<p class="section-kicker">My workflow</p>
+					<h2 class="section-title">Tools of the trade</h2>
+				</div>
 				<div class="tools-grid">
 					<div class="card skill-card">
 						<h3>Version Control</h3>
@@ -144,92 +163,126 @@
 				</div>
 			</section>
 			<section id="projects" class="section reveal">
-				<h2 class="section-title">Featured Projects</h2>
+				<div class="section-heading">
+					<p class="section-kicker">Selected work</p>
+					<h2 class="section-title">Projects in practice</h2>
+					<p class="section-description">
+						A selection of applications and systems I’ve built across the stack.
+					</p>
+				</div>
 				<div class="grid-3">
 					<div class="card project-card project-calculator">
+						<p class="project-type">Frontend · Interactive app</p>
 						<h3>Calculator App</h3>
 						<p>
-							Responsive calculator with basic arithmetic, keyboard support, and
-							a polished dark UI.
+							A responsive calculator with keyboard support and a carefully
+							designed dark interface.
 						</p>
 						<a
 							href="https://calculator-eight-murex-78.vercel.app/"
 							target="_blank"
+							rel="noopener noreferrer"
 							class="project-link"
-							>View Project →</a
+							>View live project <span aria-hidden="true">↗</span></a
 						>
 					</div>
 
-					<div class="card project-card project-food">
+					<div class="card project-card project-weather">
+						<p class="project-type">Frontend · Live data</p>
 						<h3>Weather Application</h3>
 						<p>
-							A modern weather app with live forecasts, search, and a polished
-							UI for quick weather insights.
+							A weather dashboard for searching locations and checking current
+							conditions and forecasts.
 						</p>
 						<a
 							href="https://weather-application-ten-inky.vercel.app/"
 							target="_blank"
+							rel="noopener noreferrer"
 							class="project-link"
-							>View Project →</a
+							>View live project <span aria-hidden="true">↗</span></a
 						>
 					</div>
 
 					<div class="card project-card project-ecommerce">
+						<p class="project-type">Backend · E-commerce</p>
 						<h3>E-Commerce App</h3>
 						<p>
-							 Designed and implemented RESTful APIs for product management, user operations, shopping carts, and orders
-using Spring Boot and Hibernate/JPA. Integrated PostgreSQL to persist product, user, cart, and order data. Implemented Spring Security with role-based access control for customers and administrators.
+							A Spring Boot API for products, customers, carts, and orders, with
+							PostgreSQL persistence and role-based security.
 						</p>
-						<a href="#" class="project-link">View Project →</a>
+						<p class="project-note">
+							Backend project · Spring Boot &amp; PostgreSQL
+						</p>
 					</div>
 
 					<div class="card project-card project-hr">
+						<p class="project-type">Full stack · Job platform</p>
 						<h3>Job Portal</h3>
 						<p>
-							 Developed a full-stack job portal that enables job seekers to search and apply for jobs while allowing employers to
-create and manage job postings. Implemented RESTful APIs using Spring Boot and Hibernate/JPA for user management, job postings, applications,
-and application status tracking. Integrated Spring Security for authentication and role-based authorization 
+							A job platform for candidates and employers, with listings,
+							applications, and role-based access built with Spring Boot.
 						</p>
-						<a href="#" class="project-link">View Project →</a>
+						<p class="project-note">Full-stack project · Java &amp; Spring</p>
 					</div>
 				</div>
 			</section>
 			<section id="contact" class="section reveal">
-				<h2 class="section-title">Contact</h2>
+				<div class="section-heading">
+					<p class="section-kicker">Have a project in mind?</p>
+					<h2 class="section-title">
+						Let’s build something <span>meaningful.</span>
+					</h2>
+				</div>
 				<div class="card contact-card">
 					<p>
-						Open to freelance work, full-time roles, and exciting
-						collaborations.
+						I’m open to full-time roles, freelance work, and thoughtful
+						collaborations. I’d love to hear what you’re working on.
 					</p>
 					<div class="contact-list">
-						<a href="mailto:naveenkumar590ms@gmail.com" class="contact-link"
-							>📧 naveenkumar590ms@gmail.com</a
-						>
+						<a href="mailto:naveenkumar590ms@gmail.com" class="contact-link">
+							<span>Email</span> naveenkumar590ms@gmail.com
+						</a>
 						<a
 							href="https://www.google.com/maps/search/?api=1&query=Bengaluru,India"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="contact-link"
-							>📍 Bengaluru, India</a
+							><span>Location</span> Bengaluru, India</a
 						>
 						<a
 							href="https://github.com/Naveen23190"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="contact-link"
-							>💼 github.com/Naveen23190</a
+							><span>GitHub</span> github.com/Naveen23190</a
 						>
 					</div>
-					<a href="mailto:naveenkumar590ms@gmail.com" class="btn btn-primary"
-						>Say Hello</a
+					<a
+						href="mailto:naveenkumar590ms@gmail.com"
+						class="btn btn-primary contact-cta"
 					>
+						Get in touch <span aria-hidden="true">↗</span>
+					</a>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			© <span id="year"></span> M S Naveen Kumar. Built with HTML, CSS, and
-			JavaScript.
+			© <span id="year"></span> Naveen Kumar <span>·</span> Built with care.
 		</footer>
+		<a
+			class="whatsapp-float"
+			href="https://wa.me/919347532767?text=Hi%20Naveen%2C%20I%27d%20like%20to%20connect."
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Chat with Naveen on WhatsApp"
+		>
+			<svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+				<path
+					d="M12.04 2a9.89 9.89 0 0 0-8.46 15.02L2 22l5.12-1.34A9.92 9.92 0 1 0 12.04 2Zm0 18.02a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.04.8.81-2.96-.2-.31a8.1 8.1 0 1 1 6.86 3.78Zm4.45-6.07c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.5.58.18 1.1.15 1.52.09.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"
+				/>
+			</svg>
+			<span>Chat on WhatsApp</span>
+		</a>
 		<script src="script.js"></script>
 	</body>
 </html>
